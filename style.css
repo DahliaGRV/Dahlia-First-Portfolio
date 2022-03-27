@@ -6,7 +6,8 @@ a {
     color: white;
 }
 body {
-    background-color:rgb(117, 63, 86)
+    background-color:rgb(117, 63, 86);
+    border-bottom: white dotted 15px;
 }
 h1 {
     padding: 25px;
@@ -31,6 +32,10 @@ ul#contact-list li {
     padding: 15px;
     font-size: 24px;
 }
+h1:hover {
+    color: black;
+    animation: glow 1s ease-in-out infinite alternate;
+}
 figure {
     background-image:url(./assets/Floral\ wallpaper.jpg);
     width: 100%;
@@ -40,7 +45,7 @@ figure {
     flex-wrap: wrap;
 } 
 figure p {
-    border: solid black 3px;
+    /* border: solid black 3px; */
     margin:0 auto;
     color: white;
     font-size: 30px;
@@ -53,6 +58,9 @@ figure p {
     top: 33%;
     justify-content: right;
     padding: 10px;
+}
+figure p:hover {
+    box-shadow: inset 0px 0px 8px olive, 0 0 15px rgb(58, 58, 2)
 }
 /* main {
     display: inline-flex;
@@ -67,12 +75,26 @@ h3 {
     color:white;
     width: 20%;
 }
+a:hover: {
+    color: black;
+    animation: glow 1s ease-in-out infinite alternate;
+}
 #about-me {
  display: flex;
  flex-wrap: wrap;
- border: 2px solid black;
- margin-left: 10%;
+ border: 3px solid black;
+ border-radius: 15px;
+ margin-left: 7%;
+ line-height: 40px;
+ max-width: 84%;
+ background-color: black;
+ color: white;
+ padding: 1%;
 }
+#about-me:hover {
+    box-shadow: inset 0px 0px 8px olive, 0 0 15px rgb(58, 58, 2)
+}
+
 #work {
  display: flex;
  flex-wrap: wrap;
@@ -83,9 +105,10 @@ aside {
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-left: 10%;
+    margin-left: 6%;
     justify-content: center;
 }
+
 img {
     display: inline-flex;
     flex-wrap: wrap;
@@ -93,8 +116,29 @@ img {
     border-radius: 15px;
     margin: 30px;
     justify-content: space-between;
-    border: black 3px solid;
-
+    border: black 4px solid;
+}
+img:hover {
+    box-shadow: inset 4px 4px 12px olive, 0 0 20px rgb(58, 58, 2)
+}
+aside picture p {
+    border: black solid 2px;
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    color: white;
+    padding: 15px;
+    max-width: 10%;
+    position: relative;
+    bottom: 30%;
+    left: 2%;
+    z-index: 4;
+    background-color:black;
+    margin-left: -2px;
+    font-size: 25px;
+}
+aside picture p:hover {
+    box-shadow: inset 0px 0px 8px olive, 0 0 15px rgb(58, 58, 2)
 }
 /* #mini-project{
    max-width: 40%;
@@ -103,10 +147,10 @@ img {
 .contact {
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 12px;
     padding: 3%;
-    margin-left: 10%;
+    margin-left: 3%;
     max-width: 79%;
 }
 
@@ -114,6 +158,11 @@ ul#contacts li {
     display: inline;
     padding: 40px;
     font-size: 24px;
+}
+footer {
+    color:white;
+    text-align: center;
+    padding: 20px;
 }
 
 @media screen and (max-width:768px){
@@ -151,7 +200,21 @@ ul#contacts li {
         position: static;
         justify-self:left;
         max-width: 100%;
-        max-height: 20%;
+        flex-basis:content;
+        box-sizing:border-box;
+        max-height: 1300px;
+        justify-content: space-between;
+    }
+    aside picture p {
+        border: black solid 2px;
+        color: white;
+        padding: 5px;
+        max-width: 15%;
+        position: relative;
+        bottom: 15%;
+        left: 3%;
+        z-index: 4;
+        background-color: black;
     }
     picture {
         position:static;
@@ -165,17 +228,15 @@ ul#contacts li {
     }
     #about-me {
         position: relative;
-        right: 12%;
         text-align: left;
         justify-self:left;
         border: none;
         padding: 25px;
         line-height: 15px;
+        margin: 5%;
     }
     #work {
         border: none;
-        position: relative;
-        right: 8%;
         padding: 0px;
         margin: 0 auto;
     }
@@ -187,7 +248,6 @@ ul#contacts li {
         right: 140%;
         margin: 0 auto;
         justify-content: left;
-        border-bottom: 2px black solid;
         max-width: 100%;
     }
     .contact {
