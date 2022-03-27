@@ -1,0 +1,174 @@
+* {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+body {
+    background-color: rgb(117, 63, 86);
+}
+h1 {
+    padding: 25px;
+    margin: 0 auto;
+    border: black 2px dotted;
+    color: white;
+    text-align: right;
+    background-color: olive;
+    font-size: 62px;
+    border-bottom: groove rgb(117, 63, 86);
+}
+nav {
+    list-style-type: none; 
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    padding: 20px;
+    background-color: rgb(74, 151, 151);
+}
+ul#contact-list li {
+    display: inline;
+    padding: 15px;
+    font-size: 24px;
+}
+figure {
+    background-image:url(./assets/Floral\ wallpaper.jpg);
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+} 
+figure p {
+    border: solid black 3px;
+    margin:0 auto;
+    color: white;
+    font-size: 30px;
+    background-color: black;
+    text-align: right;
+    display: flex;
+    flex-basis: 300px;
+    text-align: right;
+    position:absolute; 
+    top: 33%;
+    justify-content: right;
+    padding: 10px;
+}
+/* main {
+    display: inline-flex;
+    flex-wrap: wrap;
+    border: 2px solid olive;
+} */
+h3 {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 24px;
+    padding: 5px;
+    color:white;
+    width: 20%;
+}
+#about-me {
+ display: flex;
+ flex-wrap: wrap;
+ border: 2px solid black;
+ margin-left: 10%;
+}
+#work {
+ display: flex;
+ flex-wrap: wrap;
+ border: 2px solid black;
+}
+
+aside {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 10%;
+    justify-content: center;
+}
+img {
+    display: inline-flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    border-radius: 15px;
+    margin: 30px;
+    justify-content: space-between;
+    border: black 3px solid;
+
+}
+/* #mini-project{
+   max-width: 40%;
+   max-height: 300px;
+} */
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    margin-left: 10%;
+}
+
+ul#contacts li {
+    display: inline;
+    padding: 40px;
+    font-size: 24px;
+}
+
+@media screen and (max-width:768px){
+    /* aside {
+        flex-direction:column;
+
+    } */
+    h1 {
+        text-align:center;
+    }
+    nav {
+        justify-content: center;
+    }
+    figure p {
+        position: absolute;
+        top: 31%;
+    }
+    main {
+        position: static;
+        display: flex;
+        flex-direction: column;
+    }
+    h3 {
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        font-size: 30px;
+        border-bottom: 3px solid black;
+        max-width: 100%;
+
+    }
+    aside {
+        position: static;
+        text-align: center;
+        justify-self:left;
+        max-width: 100%;
+        max-height: 20%;
+    }
+    #about-me {
+        position: inherit;
+        text-align: left;
+        justify-self:left;
+        border: none;
+        padding: 35px;
+    }
+    ul#contacts li {
+        border: none;
+        display: block;
+        padding: 10px;
+        position: relative;
+        right: 140%;
+        margin: 0 auto;
+        justify-content: left;
+        border-bottom: 2px black solid;
+        max-width: 100%;
+    }
+    .contact {
+        border: none;
+        margin: 0 auto;
+        text-align: left;
+        justify-self: left;
+    }
+}
