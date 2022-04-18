@@ -2,21 +2,29 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
+:root {
+    --theblue: rgb(98, 138, 145);
+    --themaroon: rgb(117, 63, 86);
+
+}
 a {
-    color: darkgrey;
+    color: rgb(53, 53, 92);
 }
 body {
-    /* background-color:rgb(117, 63, 86); */
-    background-color: rgb(150, 59, 77);
-    border-bottom: white dotted 15px;
+    background-color: black;
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
 }
 h1 {
     padding: 25px;
     margin: 0 auto;
-    border: black 2px dotted;
-    color: darkgrey;
+    border: white 2px dotted;
+    color: black;
     text-align: right;
-    background-color: olive;
+    background-color: rgb(117, 63, 86);
     font-size: 62px;
     border-bottom: groove rgb(117, 63, 86);
 }
@@ -34,8 +42,7 @@ ul#contact-list li {
     font-size: 24px;
 }
 h1:hover {
-    color: black;
-    animation: glow 1s ease-in-out infinite alternate;
+    color: white;
 }
 figure {
     background-image:url("./assets/Floral\ wallpaper.jpg");
@@ -48,9 +55,9 @@ figure {
 
 figure p {
     margin:0 auto;
-    color: darkgray;
+    color: black;
     font-size: 30px;
-    background-color: rgb(121, 65, 65);
+    background-color: var(--theblue);
     text-align: right;
     display: flex;
     flex-basis: 300px;
@@ -59,10 +66,11 @@ figure p {
     top: 33%;
     justify-content: right;
     padding: 10px;
+    border-radius: 15px;
 }
 
 figure p:hover {
-    color: black;
+    color: white;
     box-shadow: inset 0px 0px 8px olive, 0 0 15px rgb(58, 58, 2);
 }
 
@@ -71,35 +79,35 @@ h3 {
     flex-wrap: wrap;
     font-size: 24px;
     padding: 5px;
-    color:darkgray;
+    color: rgb(53, 53, 92);
     width: 20%;
 }
 h3:hover {
-    color: black;
-    animation: glow 1s ease-in-out infinite alternate;
-    box-shadow: inset 2px olive;
+    color: white;
+    /* animation: glow 1s ease-in-out infinite alternate; */
+    box-shadow: inset 3px olive;
 }
 a:hover {
-    color: black;
-    animation: glow 1s ease-in-out infinite alternate;
-    box-shadow: inset 2px olive;
+    color: white;
+    /* animation: glow 1s ease-in-out infinite alternate; */
+    box-shadow: inset 3px olive;
 }
 
 #about-me {
  display: flex;
  flex-wrap: wrap;
- border: 3px solid black;
+ border: 3px solid white;
  border-radius: 15px;
  margin-left: 7%;
  line-height: 40px;
  max-width: 84%;
- background-color:rgb(121, 65, 65);
- color: darkgray;
+ background-color:var(--theblue);
+ color: black;
  padding: 1%;
 }
 #about-me:hover {
-    color:black;
-    box-shadow: inset 0px 0px 8px olive, 0 0 15px rgb(58, 58, 2)
+    color:white;
+    box-shadow: inset 0px 0px 8px olive, 0 0 15px rgb(58, 58, 2);
 }
 
 #work {
@@ -116,20 +124,17 @@ aside {
     justify-content: center;
 }
 
-img {
+ aside picture img {
     display: inline-flex;
     flex-wrap: wrap;
     max-width: 90%;
     border-radius: 15px;
     margin: 30px;
     justify-content: space-between;
-    border: black 4px solid;
-}
-img:hover {
-    box-shadow: inset 4px 4px 12px olive, 0 0 20px rgb(58, 58, 2)
+    border: white 4px solid;
 }
 aside picture p {
-    border: black solid 2px;
+    border: white solid 2px;
     border-radius: 15px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -137,10 +142,10 @@ aside picture p {
     padding: 15px;
     max-width: 10%;
     position: relative;
-    bottom: 30%;
+    bottom: 28%;
     left: 2%;
     z-index: 4;
-    background-color:rgb(121, 65, 65);
+    background-color: var(--theblue);
     margin-left: -2px;
     font-size: 25px;
 }
@@ -161,11 +166,10 @@ ul#contacts li {
     padding: 40px;
     font-size: 24px;
 }
-footer {
-    color:white;
-    text-align: center;
-    padding: 20px;
+#resume {
+    font-size:x-large;
 }
+
 
 @media screen and (max-width:768px){
     body {
@@ -265,4 +269,4 @@ footer {
         margin: 0 auto;
         text-align: left;
         justify-self: left;
-    }
+}};
