@@ -2,10 +2,10 @@
 #CSS Portfolio
 
 ##Link to launched website:
-https://dahliagrv.github.io/Dahlia-First-Portfolio/
+https://dahliagrv.github.io/Dahlia-Portfolio/
 
 ##Link to Github repo:
-https://github.com/DahliaGRV/Dahlia-First-Portfolio
+https://github.com/DahliaGRV/Dahlia-Portfolio
 
 ##Screenshot of portfolio full screen:
 ![image](https://user-images.githubusercontent.com/98775943/160301293-228af2c2-c5de-414b-bcef-1dbf82459689.png)
