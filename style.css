@@ -187,8 +187,7 @@ ul#contacts li {
         text-align:center;
     }
     .avatar{
-        position: relative;
-        left: 38%;
+        display: none;
     }
     nav {
         justify-content: center;
