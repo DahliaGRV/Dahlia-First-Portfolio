@@ -1,114 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="favicon.ico"/>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dahlia Portfolio</title>
-  </head>
-  <body>
-    <header>
-      <h1 >Dahlia Graves <img src="./assets/avatar.jpg" alt="avatar" class="avatar"></h1>
-      <nav>
-        <ul id="contact-list">
-          <li>
-            <a href="#about-me">About Me</a>
-          </li>
-          <li>
-            <a href="#work">Work</a>
-          </li>
-          <li>
-            <a href="#contact-me">Contact Me</a>
-          </li>
-          <li>
-            <a href="#resume">Resume</a>
-          </li>
+    <link rel="stylesheet" href="css/uikit.min.css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"></script>
+</head>
+<body>
+    <h1 class="uk-heading-line uk-text-right"><span>Dahlia Graves</span></h1>
+    <nav class="uk-navbar-container" uk-navbar>
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li>About Me<a href="#aboutMe"></a></li>
+                <li>Work<a href="#work"></a></li>
+                <li>Contact Me<a href="#contactMe"></a></li>
+                <li><a id= "resume" href="./Dahlia Graves Resume.pdf"target="_blank" download="Dahlia-Graves-Resume">Resume</a></li>
+            </ul>
+        </div>
+        <figure id="header-img">
+            <p>Welcome to my Portfolio!</p>
+          </figure>
+    </nav>
+    <article class="uk-comment uk-comment-primary">
+        <header class="uk-comment-header">
+            <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                <div class="uk-width-auto">
+                    <img class="uk-comment-avatar" src="images/avatar.jpg" width="80" height="80" alt="">
+                </div>
+                <div class="uk-width-expand">
+                    <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#aboutMe">About Me</a></h4>
+                    <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                        <li><a href="https://github.com/DahliaGRV">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="uk-comment-body">
+            <p> Dahlia Lola Graves here. Lover of seeking knowledge, solving puzzles,
+                and finding ways to bring creativity/ color into everyday life. An
+                aspiring software developer who is excited to have a new set of skills
+                under my belt. Fond of florals, indie video games, and drinking more
+                coffee than is necessary. Respector of pronouns, preferred names, and
+                all things leading us towards diversity.
+                <br />
+                <br />
+                Eventually seeking a company that respects & encourages individuality,
+                as well as, strives to cultivate a working environment that is both
+                creative and diserve in my beloved city- Tacoma. Or Ta(home)a as I
+                like to call it..</p>
+        </div>
+    </article>
+    <div><a class="uk-link-reset" href="#work">My Work</a></div>
+    <!-- Inspirational Jeopardy slider -->
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
+        <h3>FotoFoto</h3>
+
+        <ul class="uk-slider-items uk-grid">
+            <li class="uk-width-3-4">
+                <div class="uk-panel">
+                    <img src="assets/FF-page1.JPG" width="400" height="600" alt="">
+                    <div class="uk-position-center uk-panel"><h1></h1></div>
+                </div>
+            </li>
+            <li class="uk-width-3-4">
+                <div class="uk-panel">
+                    <img src="assets/FF-page2.JPG" width="400" height="600" alt="">
+                    <div class="uk-position-center uk-panel"><h1></h1></div>
+                </div>
+            </li>
+            <li class="uk-width-3-4">
+                <div class="uk-panel">
+                    <img src="assets/FF-page3.JPG" width="400" height="600" alt="">
+                    <div class="uk-position-center uk-panel"><h1></h1></div>
+                </div>
+            </li>
+            <li class="uk-width-3-4">
+                <div class="uk-panel">
+                    <img src="assets/FF-page4.JPG" width="400" height="600" alt="">
+                    <div class="uk-position-center uk-panel"><h1></h1></div>
+                </div>
+            </li>
+            <li class="uk-width-3-4">
+                <div class="uk-panel">
+                    <img src="assets/FF-page5.JPG" width="400" height="600" alt="">
+                    <div class="uk-position-center uk-panel"><h1></h1></div>
+                </div>
+            </li>
         </ul>
-      </nav>
-      <figure id="header-img">
-        <p>Welcome to my Portfolio!</p>
-      </figure>
-    </header>
-    <main>
-      <h3>About Me</h3>
-      <section id="about-me" class="about">
-        <p>
-          Dahlia Lola Graves here. Lover of seeking knowledge, solving puzzles,
-          and finding ways to bring creativity/ color into everyday life. An
-          aspiring software developer who is excited to have a new set of skills
-          under my belt. Fond of florals, indie video games, and drinking more
-          coffee than is necessary. Respector of pronouns, preferred names, and
-          all things leading us towards diversity.
-          <br />
-          <br />
-          Eventually seeking a company that respects & encourages individuality,
-          as well as, strives to cultivate a working environment that is both
-          creative and diserve in my beloved city- Tacoma. Or Ta(home)a as I
-          like to call it.
-        </p>
-      </section>
-      <h3>Work</h3>
-      <aside id="work">
-        <picture>
-          <img
-            src="./assets/Inspiration-jeopardy.jpg"
-            alt="inspirational-jeopardy"
-            id="inspirational-jeopardy"
-          />
-          <p>
-            <a href="https://github.com/DahliaGRV/inspirational-jeopardy"target="_blank"
-              >Inspiration Jeopardy
-            </a>
-          </p>
-          <img
-            src="./assets/Stardew-Quiz.jpg"
-            alt="Stardew-Quiz"
-            id="Stardew-Quiz"
-          />
-          <p>
-            <a href="https://github.com/DahliaGRV/Timed-Quiz"target="_blank"
-              >Stardew Quiz
-            </a>
-          </p>
-          <img
-            src="./assets/weather-dashboard.jpg"
-            alt="weather-dashboard"
-            id="weather-dashboard"
-          />
-          <p>
-            <a href="https://github.com/DahliaGRV/Weather-Dashboard"target="_blank"
-              >Weather Dashboard
-            </a>
-          </p>
-        </picture>
-      </aside>
-      <h3>Contact Me</h3>
-      <section id="contact-me" class="contact">
-        <ul id="contacts">
-          <li>
-            <a>206.407.9864</a>
-          </li>
-          <li>
-            <a href="mailto:dahliag@uw.edu" target="_blank">Dahliag@uw.edu</a>
-          </li>
-          <li>
-            <a href="https://github.com/DahliaGRV" target="_blank">GitHub</a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/dahlia-graves-a99b5a234?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B72On0v8jTiu4G44cjwgIkw%3D%3D"
-              target="_blank"
-              >LinkedIn</a
-            >
-          </li>
-        </ul>
-      </section>
-      <a id= "resume" href="./Dahlia Graves Resume.pdf"target="_blank" download="Dahlia-Graves-Resume">Resume</a>
-      <section id="resume" class="resume"></section>
-    </main>
-<script src="./script.js"></script>
-  </body>
+    
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
+    </div>
+        <!-- FotoFoto slider -->
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">    
+            <h3>Inspirational Jeopardy</h3>
+    
+            <ul class="uk-slider-items uk-grid">
+                <li class="uk-width-3-4">
+                    <div class="uk-panel">
+                        <img src="assets/InspJep-page1.JPG" width="400" height="600" alt="">
+                        <div class="uk-position-center uk-panel"><h1></h1></div>
+                    </div>
+                </li>
+                <li class="uk-width-3-4">
+                    <div class="uk-panel">
+                        <img src="assets/InspJep-page2.JPG" width="400" height="600" alt="">
+                        <div class="uk-position-center uk-panel"><h1></h1></div>
+                    </div>
+                </li>
+                <li class="uk-width-3-4">
+                    <div class="uk-panel">
+                        <img src="assets/InspJep-page3.JPG" width="400" height="600" alt="">
+                        <div class="uk-position-center uk-panel"><h1></h1></div>
+                    </div>
+                </li>
+                <li class="uk-width-3-4">
+                    <div class="uk-panel">
+                        <img src="assets/InspJep-page4.JPG" width="400" height="600" alt="">
+                        <div class="uk-position-center uk-panel"><h1></h1></div>
+                    </div>
+                </li>
+                <li class="uk-width-3-4">
+                    <div class="uk-panel">
+                        <img src="assets/InspJep-page5.JPG" width="400" height="600" alt="">
+                        <div class="uk-position-center uk-panel"><h1></h1></div>
+                    </div>
+                </li>
+            </ul>
+        
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        </div>
+        <div class="uk-container" id="contactMe">
+        <a class="icon-link" target="_blank" href="https://github.com/DahliaGRV">
+			<i class="fab fa-github cont-icon"></i>
+		</a>
+        <a class="icon-link" href="mailto:dahliag@uw.edu">
+			<i class="fas fa-envelope cont-icon"></i>
+		</a>
+        <a class="icon-link" href="https://www.linkedin.com/in/dahlia-graves-a99b5a234/">
+			<i class="fab fa-linkedin cont-icon"></i>
+		</a>
+    </div>
+    
+</body>
 </html>
