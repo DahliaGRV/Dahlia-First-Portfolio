@@ -7,12 +7,6 @@
     --themaroon: rgb(117, 63, 86);
 
 }
-.avatar {
-    vertical-align: middle;
-    width: 150px;
-    height: 150px;
-    border-radius: 35%;
-}
 a {
     color: rgb(53, 53, 92);
 }
@@ -24,41 +18,13 @@ body {
     width: 100%;
     background-attachment: fixed;
 }
-/* h1 {
-    padding: 25px;
-    margin: 0 auto !important;
-    border: white 2px dotted;
-    color: black;
-    text-align: right;
-    background-color: rgb(117, 63, 86);
-    font-size: 62px;
-    border-bottom: groove rgb(117, 63, 86);
-} */
+
 ul#contact-list li {
     display: inline;
     padding: 15px;
     font-size: 24px;
 
 }
-h1:hover {
-    color: white;
-}
-figure p {
-    margin:0 auto !important;
-    color: black;
-    font-size: 30px;
-    background-color: var(--theblue);
-    text-align: right;
-    display: flex;
-    flex-basis: 300px;
-    text-align: right;
-    position:absolute; 
-    top: 33%;
-    justify-content: right;
-    padding: 10px;
-    border-radius: 15px;
-}
-
 
 h3 {
     display: flex;
@@ -68,11 +34,7 @@ h3 {
     color: rgb(53, 53, 92);
     width: 20%;
 }
-h3:hover {
-    color: white;
-    /* animation: glow 1s ease-in-out infinite alternate; */
-    box-shadow: inset 3px rgb(180, 123, 166);
-}
+
 a:hover {
     color: white;
     /* animation: glow 1s ease-in-out infinite alternate; */
@@ -128,14 +90,15 @@ ul#contacts li {
 
 @media screen and (max-width:768px){
     body {
-        background-color: black;
+        background-color: black !important;
         background-image: none;
     }
     h1 {
         text-align:center;
     }
     .avatar{
-        display: none;
+        display: none !important;
+        display:inline !important;
     }
     nav {
         justify-content: center;
